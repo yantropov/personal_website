@@ -1,0 +1,254 @@
+
+/*GLOBAL*/
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body,html {
+  height: 100%;
+}
+
+i.fa {
+  font-size: 4rem;
+}
+
+.profile_pic {
+  border-radius: 100%;
+}
+
+.transition-image {
+  margin-bottom: 1rem;
+}
+
+/*MENU*/
+.navigation-menu-wrapper {
+  height: 6vh;
+  padding-top:2%;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+
+}
+
+.navigation-menu-flexbox-container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
+}
+
+.ul-flexbox-container {
+  display: flex;
+
+}
+
+.ul-flexbox-container li {
+  padding: 0.4rem 0.8rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.ul-flexbox-container li a {
+  color: #FFFF;
+}
+
+.ul-flexbox-container li a:hover {
+  color: #F34213;
+  transition: 1s;
+}
+
+p.navigation-logo {
+  font-family: 'Lobster', cursive;
+  font-size: 2.4rem;
+}
+
+
+/*LANDING IMAGE*/
+
+.welcome_container {
+  background-image: url("../images/bg-fin-test.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+  text-align: center;
+}
+
+
+
+.welcome_container h1 ,.welcome_container h2, .welcome_container_button, .welcome_container_button a {
+  text-transform: uppercase;
+  color: #FFFF;
+  font-family: 'Press Start 2P', cursive,'Quicksand', sans-serif;
+  width: 45%;
+  padding: 2rem;
+  text-shadow: 6px 6px 12px rgba(22,22,22,0.3);
+  line-height: 3.5rem;
+}
+
+.welcome_container h1 {
+  font-size: 3rem;
+}
+
+.welcome_container h2 {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+.welcome_container_button a {
+  font-size: 1.5rem;
+
+  color: #ff3f00;
+}
+
+.blink {
+  animation-name: blinker;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinker {
+  0%{opacity: 1.0}
+  50%{opacity: 0.0}
+  100%{opacity: 1.0}
+}
+
+.blink:hover{
+  animation-play-state:paused;
+}
+
+/*PERSONAL INFORMATION SECTION*/
+
+.personal_information, .rmit_information {
+  padding: 0 5rem;
+}
+
+.about_me, .why_rmit, .ideal_job, .personal_profile {
+  padding: 0 5%;
+  text-align: center;
+  line-height: 2.8rem;
+  font-size: 1.4rem;
+}
+
+.about_me p, .interests_content p, .why_rmit p, .ideal_job p, .job_ad, .personal_profile p  {
+  padding-top: 3%;
+}
+
+.emoji_pc {
+  max-width: 7%;
+  max-height: 100%;
+  margin:auto;
+  display: block;
+}
+
+p.student_number {
+  text-align: center;
+  padding: 0;
+}
+
+.fade-in {
+  opacity:0;
+  transform: translateY(15px);
+  transition: 1.5s all ease-in-out;
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+.container {
+  padding: 1rem 5%;
+  background-color: #FFFF;
+
+}
+
+.flexbox_wrapper_interests_image {
+  display:flex;
+  height: 70%;
+  align-items: center;
+
+}
+
+.interests_content {
+  padding: 0 5%;
+  text-align: center;
+  line-height: 2.8rem;
+  font-size: 1.4rem;
+  margin-bottom: 1%;
+
+
+}
+
+.image_flexbox_wrapper {
+  display: flex;
+  flex-basis: 40%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.interests_content_text h2 {
+  color: #3A3562;
+}
+
+.interests_content_text p {
+  color: #25283d;
+}
+
+
+
+.interests_content_h1 {
+  text-transform: uppercase;
+  color: #3A3562;
+}
+
+
+.interests_image {
+  max-height: 80%;
+  max-width: 80%;
+  opacity:0;
+  margin: auto;
+  transform: translateY(75px);
+  transition: 1.5s all ease-in-out;
+}
+
+.interests_image_appear {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+
+
+.transition-image {
+  width: 100vw;
+  height: auto;
+}
+
+.emoji_cactus {
+  max-width: 5%;
+  max-height: auto;
+  margin:auto;
+  display: block;
+}
+
+.istp_link {
+  display: block;
+}
+
+.istp_careers_h3 {
+  padding-top: 3%;
+}
